@@ -1,3 +1,4 @@
+
 class CashRegister
   attr_accessor :total, :discount
   
@@ -12,7 +13,7 @@ class CashRegister
   
   def apply_discount
     if @discount > 0
-      @total * (@discount / 100)
+      @total = @total * (@discount / 100)
     end
   end
   
