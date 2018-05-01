@@ -25,8 +25,8 @@ class CashRegister
     end
   end
   
-  def void_transaction
-    @total = 0.0 
+  def void_transaction(item, cost, quantity = 1)
+    @total = @total - self.add_item(item, cost, quantity)
   end
   
   
